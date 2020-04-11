@@ -1,0 +1,26 @@
+1.  Setup
+    a)  Install Flask in virtual environment
+        -Follow along with the windows Flask setup documentation
+        -Create a folder for the virtual environment in my outside "Environments" parent dir
+        -Create application.py within the "languageLab" directory
+        -Within the virtual environment set the app = application.py
+        -We can later create a requirements.txt file for others to be able to set up our web app
+    b)  Attempt to make a simple "Hello, world!" web application
+
+2.  Simple homepage
+    a)  Setup layout.html and index.html
+
+3.  Create CSV verb, tense, and conjugation data
+
+4. SQL
+    a) Import CSV data into a SQLite database
+
+5. Implement SQL data dynamically into website
+
+6. Routing setup
+    a) Homepage will direct users to the tense route (with POST data)
+    b) The tense route will direct users to the conjugation route (with POST data)
+
+7. Quiz functionality (session specific)
+    b)  Random subjects / verbs based on POST data from tenses
+    c)  Verification of user input (session specific)
