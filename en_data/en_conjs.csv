@@ -1,0 +1,401 @@
+lang_id,verb_id,tense_id,sing_1,sing_2,sing_3,plural_1,plural_2,plural_3
+1,1,1,am,are,is,are,are,are
+1,1,2,will be,will be,will be,will be,will be,will be
+1,1,3,was,was,was,was,was,was
+1,1,4,would be,would be,would be,would be,would be,would be
+1,1,5,am being,are being,is being,are being,are being,are being
+1,1,6,will be being,will be being,will be being,will be being,will be being,will be being
+1,1,7,was being,were being,was being,were being,were being,were being
+1,1,8,would be being,would be being,would be being,would be being,would be being,would be being
+1,1,9,have been,have been,has been,have been,have been,have been
+1,1,10,will have been,will have been,will have been,will have been,will have been,will have been
+1,1,11,had been,had been,had been,had been,had been,had been
+1,1,12,would have been,would have been,would have been,would have been,would have been,would have been
+1,1,13,have been being,have been being,has been being,have been being,have been being,have been being
+1,1,14,will have been being,will have been being,will have been being,will have been being,will have been being,will have been being
+1,1,15,had been being,had been being,had been being,had been being,had been being,had been being
+1,1,16,would have been being,would have been being,would have been being,would have been being,would have been being,would have been being
+1,2,1,have,have,has,have,have,have
+1,2,2,will have,will have,will have,will have,will have,will have
+1,2,3,had,had,had,had,had,had
+1,2,4,would have,would have,would have,would have,would have,would have
+1,2,5,am having,are having,is having,are having,are having,are having
+1,2,6,will be having,will be having,will be having,will be having,will be having,will be having
+1,2,7,was having,were having,was having,were having,were having,were having
+1,2,8,would be having,would be having,would be having,would be having,would be having,would be having
+1,2,9,have had,have had,has had,have had,have had,have had
+1,2,10,will have had,will have had,will have had,will have had,will have had,will have had
+1,2,11,had had,had had,had had,had had,had had,had had
+1,2,12,would have had,would have had,would have had,would have had,would have had,would have had
+1,2,13,have been having,have been having,has been having,have been having,have been having,have been having
+1,2,14,will have been having,will have been having,will have been having,will have been having,will have been having,will have been having
+1,2,15,had been having,had been having,had been having,had been having,had been having,had been having
+1,2,16,would have been having,would have been having,would have been having,would have been having,would have been having,would have been having
+1,3,1,do,do,does,do,do,do
+1,3,2,will do,will do,will do,will do,will do,will do
+1,3,3,did,did,did,did,did,did
+1,3,4,would do,would do,would do,would do,would do,would do
+1,3,5,am doing,are doing,is doing,are doing,are doing,are doing
+1,3,6,will be doing,will be doing,will be doing,will be doing,will be doing,will be doing
+1,3,7,was doing,were doing,was doing,were doing,were doing,were doing
+1,3,8,would be doing,would be doing,would be doing,would be doing,would be doing,would be doing
+1,3,9,have done,have done,has done,have done,have done,have done
+1,3,10,will have done,will have done,will have done,will have done,will have done,will have done
+1,3,11,had done,had done,had done,had done,had done,had done
+1,3,12,would have done,would have done,would have done,would have done,would have done,would have done
+1,3,13,have been doing,have been doing,has been doing,have been doing,have been doing,have been doing
+1,3,14,will have been doing,will have been doing,will have been doing,will have been doing,will have been doing,will have been doing
+1,3,15,had been doing,had been doing,had been doing,had been doing,had been doing,had been doing
+1,3,16,would have been doing,would have been doing,would have been doing,would have been doing,would have been doing,would have been doing
+1,4,1,say,say,says,say,say,say
+1,4,2,will say,will say,will say,will say,will say,will say
+1,4,3,said,said,said,said,said,said
+1,4,4,would say,would say,would say,would say,would say,would say
+1,4,5,am saying,are saying,is saying,are saying,are saying,are saying
+1,4,6,will be saying,will be saying,will be saying,will be saying,will be saying,will be saying
+1,4,7,was saying,were saying,was saying,were saying,were saying,were saying
+1,4,8,would be saying,would be saying,would be saying,would be saying,would be saying,would be saying
+1,4,9,have said,have said,has said,have said,have said,have said
+1,4,10,will have said,will have said,will have said,will have said,will have said,will have said
+1,4,11,had said,had said,had said,had said,had said,had said
+1,4,12,would have said,would have said,would have said,would have said,would have said,would have said
+1,4,13,have been saying,have been saying,has been saying,have been saying,have been saying,have been saying
+1,4,14,will have been saying,will have been saying,will have been saying,will have been saying,will have been saying,will have been saying
+1,4,15,had been saying,had been saying,had been saying,had been saying,had been saying,had been saying
+1,4,16,would have been saying,would have been saying,would have been saying,would have been saying,would have been saying,would have been saying
+1,5,1,get,get,gets,get,get,get
+1,5,2,will get,will get,will get,will get,will get,will get
+1,5,3,got,got,got,got,got,got
+1,5,4,would get,would get,would get,would get,would get,would get
+1,5,5,am getting,are getting,is getting,are getting,are getting,are getting
+1,5,6,will be getting,will be getting,will be getting,will be getting,will be getting,will be getting
+1,5,7,was getting,were getting,was getting,were getting,were getting,were getting
+1,5,8,would be getting,would be getting,would be getting,would be getting,would be getting,would be getting
+1,5,9,have got,have got,has got,have got,have got,have got
+1,5,10,will have got,will have got,will have got,will have got,will have got,will have got
+1,5,11,had got,had got,had got,had got,had got,had got
+1,5,12,would have got,would have got,would have got,would have got,would have got,would have got
+1,5,13,have been getting,have been getting,has been getting,have been getting,have been getting,have been getting
+1,5,14,will have been getting,will have been getting,will have been getting,will have been getting,will have been getting,will have been getting
+1,5,15,had been getting,had been getting,had been getting,had been getting,had been getting,had been getting
+1,5,16,would have been getting,would have been getting,would have been getting,would have been getting,would have been getting,would have been getting
+1,6,1,make,make,makes,make,make,make
+1,6,2,will make,will make,will make,will make,will make,will make
+1,6,3,made,made,made,made,made,made
+1,6,4,would make,would make,would make,would make,would make,would make
+1,6,5,am making,are making,is making,are making,are making,are making
+1,6,6,will be making,will be making,will be making,will be making,will be making,will be making
+1,6,7,was making,were making,was making,were making,were making,were making
+1,6,8,would be making,would be making,would be making,would be making,would be making,would be making
+1,6,9,have made,have made,has made,have made,have made,have made
+1,6,10,will have made,will have made,will have made,will have made,will have made,will have made
+1,6,11,had made,had made,had made,had made,had made,had made
+1,6,12,would have made,would have made,would have made,would have made,would have made,would have made
+1,6,13,have been making,have been making,has been making,have been making,have been making,have been making
+1,6,14,will have been making,will have been making,will have been making,will have been making,will have been making,will have been making
+1,6,15,had been making,had been making,had been making,had been making,had been making,had been making
+1,6,16,would have been making,would have been making,would have been making,would have been making,would have been making,would have been making
+1,7,1,go,go,goes,go,go,go
+1,7,2,will go,will go,will go,will go,will go,will go
+1,7,3,went,went,went,went,went,went
+1,7,4,would go,would go,would go,would go,would go,would go
+1,7,5,am going,are going,is going,are going,are going,are going
+1,7,6,will be going,will be going,will be going,will be going,will be going,will be going
+1,7,7,was going,were going,was going,were going,were going,were going
+1,7,8,would be going,would be going,would be going,would be going,would be going,would be going
+1,7,9,have gone,have gone,has gone,have gone,have gone,have gone
+1,7,10,will have gone,will have gone,will have gone,will have gone,will have gone,will have gone
+1,7,11,had gone,had gone,had gone,had gone,had gone,had gone
+1,7,12,would have gone,would have gone,would have gone,would have gone,would have gone,would have gone
+1,7,13,have been going,have been going,has been going,have been going,have been going,have been going
+1,7,14,will have been going,will have been going,will have been going,will have been going,will have been going,will have been going
+1,7,15,had been going,had been going,had been going,had been going,had been going,had been going
+1,7,16,would have been going,would have been going,would have been going,would have been going,would have been going,would have been going
+1,8,1,know,know,knows,know,know,know
+1,8,2,will know,will know,will know,will know,will know,will know
+1,8,3,knew,knew,knew,knew,knew,knew
+1,8,4,would know,would know,would know,would know,would know,would know
+1,8,5,am knowing,are knowing,is knowing,are knowing,are knowing,are knowing
+1,8,6,will be knowing,will be knowing,will be knowing,will be knowing,will be knowing,will be knowing
+1,8,7,was knowing,were knowing,was knowing,were knowing,were knowing,were knowing
+1,8,8,would be knowing,would be knowing,would be knowing,would be knowing,would be knowing,would be knowing
+1,8,9,have known,have known,has known,have known,have known,have known
+1,8,10,will have known,will have known,will have known,will have known,will have known,will have known
+1,8,11,had known,had known,had known,had known,had known,had known
+1,8,12,would have known,would have known,would have known,would have known,would have known,would have known
+1,8,13,have been knowing,have been knowing,has been knowing,have been knowing,have been knowing,have been knowing
+1,8,14,will have been knowing,will have been knowing,will have been knowing,will have been knowing,will have been knowing,will have been knowing
+1,8,15,had been knowing,had been knowing,had been knowing,had been knowing,had been knowing,had been knowing
+1,8,16,would have been knowing,would have been knowing,would have been knowing,would have been knowing,would have been knowing,would have been knowing
+1,9,1,take,take,takes,take,take,take
+1,9,2,will take,will take,will take,will take,will take,will take
+1,9,3,took,took,took,took,took,took
+1,9,4,would take,would take,would take,would take,would take,would take
+1,9,5,am taking,are taking,is taking,are taking,are taking,are taking
+1,9,6,will be taking,will be taking,will be taking,will be taking,will be taking,will be taking
+1,9,7,was taking,were taking,was taking,were taking,were taking,were taking
+1,9,8,would be taking,would be taking,would be taking,would be taking,would be taking,would be taking
+1,9,9,have taken,have taken,has taken,have taken,have taken,have taken
+1,9,10,will have taken,will have taken,will have taken,will have taken,will have taken,will have taken
+1,9,11,had taken,had taken,had taken,had taken,had taken,had taken
+1,9,12,would have taken,would have taken,would have taken,would have taken,would have taken,would have taken
+1,9,13,have been taking,have been taking,has been taking,have been taking,have been taking,have been taking
+1,9,14,will have been taking,will have been taking,will have been taking,will have been taking,will have been taking,will have been taking
+1,9,15,had been taking,had been taking,had been taking,had been taking,had been taking,had been taking
+1,9,16,would have been taking,would have been taking,would have been taking,would have been taking,would have been taking,would have been taking
+1,10,1,see,see,sees,see,see,see
+1,10,2,will see,will see,will see,will see,will see,will see
+1,10,3,saw,saw,saw,saw,saw,saw
+1,10,4,would see,would see,would see,would see,would see,would see
+1,10,5,am seeing,are seeing,is seeing,are seeing,are seeing,are seeing
+1,10,6,will be seeing,will be seeing,will be seeing,will be seeing,will be seeing,will be seeing
+1,10,7,was seeing,were seeing,was seeing,were seeing,were seeing,were seeing
+1,10,8,would be seeing,would be seeing,would be seeing,would be seeing,would be seeing,would be seeing
+1,10,9,have seen,have seen,has seen,have seen,have seen,have seen
+1,10,10,will have seen,will have seen,will have seen,will have seen,will have seen,will have seen
+1,10,11,had seen,had seen,had seen,had seen,had seen,had seen
+1,10,12,would have seen,would have seen,would have seen,would have seen,would have seen,would have seen
+1,10,13,have been seeing,have been seeing,has been seeing,have been seeing,have been seeing,have been seeing
+1,10,14,will have been seeing,will have been seeing,will have been seeing,will have been seeing,will have been seeing,will have been seeing
+1,10,15,had been seeing,had been seeing,had been seeing,had been seeing,had been seeing,had been seeing
+1,10,16,would have been seeing,would have been seeing,would have been seeing,would have been seeing,would have been seeing,would have been seeing
+1,11,1,come,come,comes,come,come,come
+1,11,2,will come,will come,will come,will come,will come,will come
+1,11,3,came,came,came,came,came,came
+1,11,4,would come,would come,would come,would come,would come,would come
+1,11,5,am coming,are coming,is coming,are coming,are coming,are coming
+1,11,6,will be coming,will be coming,will be coming,will be coming,will be coming,will be coming
+1,11,7,was coming,were coming,was coming,were coming,were coming,were coming
+1,11,8,would be coming,would be coming,would be coming,would be coming,would be coming,would be coming
+1,11,9,have come,have come,has come,have come,have come,have come
+1,11,10,will have come,will have come,will have come,will have come,will have come,will have come
+1,11,11,had come,had come,had come,had come,had come,had come
+1,11,12,would have come,would have come,would have come,would have come,would have come,would have come
+1,11,13,have been coming,have been coming,has been coming,have been coming,have been coming,have been coming
+1,11,14,will have been coming,will have been coming,will have been coming,will have been coming,will have been coming,will have been coming
+1,11,15,had been coming,had been coming,had been coming,had been coming,had been coming,had been coming
+1,11,16,would have been coming,would have been coming,would have been coming,would have been coming,would have been coming,would have been coming
+1,12,1,think,think,thinks,think,think,think
+1,12,2,will think,will think,will think,will think,will think,will think
+1,12,3,thought,thought,thought,thought,thought,thought
+1,12,4,would think,would think,would think,would think,would think,would think
+1,12,5,am thinking,are thinking,is thinking,are thinking,are thinking,are thinking
+1,12,6,will be thinking,will be thinking,will be thinking,will be thinking,will be thinking,will be thinking
+1,12,7,was thinking,were thinking,was thinking,were thinking,were thinking,were thinking
+1,12,8,would be thinking ,would be thinking,would be thinking,would be thinking,would be thinking,would be thinking
+1,12,9,have thought,have thought,has thought,have thought,have thought,have thought
+1,12,10,will have thought,will have thought,will have thought,will have thought,will have thought,will have thought
+1,12,11,had thought,had thought,had thought,had thought,had thought,had thought
+1,12,12,would have thought,would have thought,would have thought,would have thought,would have thought,would have thought
+1,12,13,have been thinking,have been thinking,has been thinking,have been thinking,have been thinking,have been thinking
+1,12,14,will have been thinking,will have been thinking,will have been thinking,will have been thinking,will have been thinking,will have been thinking
+1,12,15,had been thinking,had been thinking,had been thinking,had been thinking,had been thinking,had been thinking
+1,12,16,would have been thinking,would have been thinking,would have been thinking,would have been thinking,would have been thinking,would have been thinking
+1,13,1,look,look,looks,look,look,look
+1,13,2,will look,will look,will look,will look,will look,will look
+1,13,3,looked,looked,looked,looked,looked,looked
+1,13,4,would look,would look,would look,would look,would look,would look
+1,13,5,am looking,are looking,is looking,are looking,are looking,are looking
+1,13,6,will be looking,will be looking,will be looking,will be looking,will be looking,will be looking
+1,13,7,was looking,were looking,was looking,were looking,were looking,were looking
+1,13,8,would be looking,would be looking,would be looking,would be looking,would be looking,would be looking
+1,13,9,have looked,have looked,has looked,have looked,have looked,have looked
+1,13,10,will have looked,will have looked,will have looked,will have looked,will have looked,will have looked
+1,13,11,had looked,had looked,had looked,had looked,had looked,had looked
+1,13,12,would have looked,would have looked,would have looked,would have looked,would have looked,would have looked
+1,13,13,have been looking,have been looking,has been looking,have been looking,have been looking,have been looking
+1,13,14,will have been looking,will have been looking,will have been looking,will have been looking,will have been looking,will have been looking
+1,13,15,had been looking,had been looking,had been looking,had been looking,had been looking,had been looking
+1,13,16,would have been looking,would have been looking,would have been looking,would have been looking,would have been looking,would have been looking
+1,14,1,want,want,wants,want,want,want
+1,14,2,will want,will want,will want,will want,will want,will want
+1,14,3,wanted,wanted,wanted,wanted,wanted,wanted
+1,14,4,would want,would want,would want,would want,would want,would want
+1,14,5,am wanting,are wanting,is wanting,are wanting,are wanting,are wanting
+1,14,6,will be wanting,will be wanting,will be wanting,will be wanting,will be wanting,will be wanting
+1,14,7,was wanting,were wanting,was wanting,were wanting,were wanting,were wanting
+1,14,8,would be wanting ,would be wanting,would be wanting,would be wanting,would be wanting,would be wanting
+1,14,9,have wanted,have wanted,has wanted,have wanted,have wanted,have wanted
+1,14,10,will have wanted,will have wanted,will have wanted,will have wanted,will have wanted,will have wanted
+1,14,11,had wanted,had wanted,had wanted,had wanted,had wanted,had wanted
+1,14,12,would have wanted,would have wanted,would have wanted,would have wanted,would have wanted,would have wanted
+1,14,13,have been wanting,have been wanting,has been wanting,have been wanting,have been wanting,have been wanting
+1,14,14,will have been wanting,will have been wanting,will have been wanting,will have been wanting,will have been wanting,will have been wanting
+1,14,15,had been wanting,had been wanting,had been wanting,had been wanting,had been wanting,had been wanting
+1,14,16,would have been wanting,would have been wanting,would have been wanting,would have been wanting,would have been wanting,would have been wanting
+1,15,1,give,give,gives,give,give,give
+1,15,2,will give,will give,will give,will give,will give,will give
+1,15,3,gave,gave,gave,gave,gave,gave
+1,15,4,would give,would give,would give,would give,would give,would give
+1,15,5,am giving,are giving,is giving,are giving,are giving,are giving
+1,15,6,will be giving,will be giving,will be giving,will be giving,will be giving,will be giving
+1,15,7,was giving,were giving,was giving,were giving,were giving,were giving
+1,15,8,would be giving,would be giving,would be giving,would be giving,would be giving,would be giving
+1,15,9,have given,have given,has given,have given,have given,have given
+1,15,10,will have given,will have given,will have given,will have given,will have given,will have given
+1,15,11,had given,had given,had given,had given,had given,had given
+1,15,12,would have given,would have given,would have given,would have given,would have given,would have given
+1,15,13,have been giving,have been giving,has been giving,have been giving,have been giving,have been giving
+1,15,14,will have been giving,will have been giving,will have been giving,will have been giving,will have been giving,will have been giving
+1,15,15,had been giving,had been giving,had been giving,had been giving,had been giving,had been giving
+1,15,16,would have been giving,would have been giving,would have been giving,would have been giving,would have been giving,would have been giving
+1,16,1,use,use,uses,use,use,use
+1,16,2,will use,will use,will use,will use,will use,will use
+1,16,3,used,used,used,used,used,used
+1,16,4,would use,would use,would use,would use,would use,would use
+1,16,5,am using,are using,is using,are using,are using,are using
+1,16,6,will be using,will be using,will be using,will be using,will be using,will be using
+1,16,7,was using,were using,was using,were using,were using,were using
+1,16,8,would be using,would be using,would be using,would be using,would be using,would be using
+1,16,9,have used,have used,has used,have used,have used,have used
+1,16,10,will have used,will have used,will have used,will have used,will have used,will have used
+1,16,11,had used,had used,had used,had used,had used,had used
+1,16,12,would have used,would have used,would have used,would have used,would have used,would have used
+1,16,13,have been using,have been using,has been using,have been using,have been using,have been using
+1,16,14,will have been using,will have been using,will have been using,will have been using,will have been using,will have been using
+1,16,15,had been using,had been using,had been using,had been using,had been using,they had been using
+1,16,16,would have been using,would have been using,would have been using,would have been using,would have been using,would have been using
+1,17,1,find,find,finds,find,find,find
+1,17,2,will find,will find,will find,will find,will find,will find
+1,17,3,found,found,found,found,found,found
+1,17,4,would find,would find,would find,would find,would find,would find
+1,17,5,am finding,are finding,is finding,are finding,are finding,are finding
+1,17,6,will be finding,will be finding,will be finding,will be finding,will be finding,will be finding
+1,17,7,was finding,were finding,was finding,were finding,were finding,were finding
+1,17,8,would be finding,would be finding,would be finding,would be finding,would be finding,would be finding
+1,17,9,have found,have found,has found,have found,have found,have found
+1,17,10,will have found,will have found,will have found,will have found,will have found,will have found
+1,17,11,had found,had found,had found,had found,had found,had found
+1,17,12,would have found,would have found,would have found,would have found,would have found,would have found
+1,17,13,have been finding,have been finding,has been finding,have been finding,have been finding,have been finding
+1,17,14,will have been finding,will have been finding,will have been finding,will have been finding,will have been finding,will have been finding
+1,17,15,had been finding,had been finding,had been finding,had been finding,had been finding,had been finding
+1,17,16,would have been finding,would have been finding,would have been finding,would have been finding,would have been finding,would have been finding
+1,18,1,tell,tell,tells,tell,tell,tell
+1,18,2,will tell,will tell,will tell,will tell,will tell,will tell
+1,18,3,told,told,told,told,told,told
+1,18,4,would tell,would tell,would tell,would tell,would tell,would tell
+1,18,5,am telling,are telling,is telling,are telling,are telling,are telling
+1,18,6,will be telling,will be telling,will be telling,will be telling,will be telling,will be telling
+1,18,7,was telling,were telling,was telling,were telling,were telling,were telling
+1,18,8,would be telling ,would be telling,would be telling,would be telling,would be telling,would be telling
+1,18,9,have told,have told,has told,have told,have told,have told
+1,18,10,will have told,will have told,will have told,will have told,will have told,will have told
+1,18,11,had told,had told,had told,had told,had told,had told
+1,18,12,would have told,would have told,would have told,would have told,would have told,would have told
+1,18,13,have been telling,have been telling,has been telling,have been telling,have been telling,have been telling
+1,18,14,will have been telling,will have been telling,will have been telling,will have been telling,will have been telling,will have been telling
+1,18,15,had been telling,had been telling,had been telling,had been telling,had been telling,had been telling
+1,18,16,would have been telling,would have been telling,would have been telling,would have been telling,would have been telling,would have been telling
+1,19,1,ask,ask,asks,ask,ask,ask
+1,19,2,will ask,will ask,will ask,will ask,will ask,will ask
+1,19,3,asked,asked,asked,asked,asked,asked
+1,19,4,would ask,would ask,would ask,would ask,would ask,would ask
+1,19,5,am asking,are asking,is asking,are asking,are asking,are asking
+1,19,6,will be asking,will be asking,will be asking,will be asking,will be asking,will be asking
+1,19,7,was asking,were asking,was asking,were asking,were asking,were asking
+1,19,8,would be asking ,would be asking,would be asking,would be asking,would be asking,would be asking
+1,19,9,have asked,have asked,has asked,have asked,have asked,have asked
+1,19,10,will have asked,will have asked,will have asked,will have asked,will have asked,will have asked
+1,19,11,had asked,had asked,had asked,had asked,had asked,had asked
+1,19,12,would have asked,would have asked,would have asked,would have asked,would have asked,would have asked
+1,19,13,have been asking,have been asking,has been asking,have been asking,have been asking,have been asking
+1,19,14,will have been asking,will have been asking,will have been asking,will have been asking,will have been asking,will have been asking
+1,19,15,had been asking,had been asking,had been asking,had been asking,had been asking,had been asking
+1,19,16,would have been asking,would have been asking,would have been asking,would have been asking,would have been asking,would have been asking
+1,20,1,work,work,works,work,work,work
+1,20,2,will work,will work,will work,will work,will work,will work
+1,20,3,worked,worked,worked,worked,worked,worked
+1,20,4,would work,would work,would work,would work,would work,would work
+1,20,5,am working,are working,is working,are working,are working,are working
+1,20,6,will be working,will be working,will be working,will be working,will be working,will be working
+1,20,7,was working,were working,was working,were working,were working,were working
+1,20,8,would be working,would be working,would be working,would be working,would be working,would be working
+1,20,9,have worked,have worked,has worked,have worked,have worked,have worked
+1,20,10,will have worked,will have worked,will have worked,will have worked,will have worked,will have worked
+1,20,11,had worked,had worked,had worked,had worked,had worked,had worked
+1,20,12,would have worked,would have worked,would have worked,would have worked,would have worked,would have worked
+1,20,13,have been working,have been working,has been working,have been working,have been working,have been working
+1,20,14,will have been working,will have been working,will have been working,will have been working,will have been working,will have been working
+1,20,15,had been working,had been working,had been working,had been working,had been working,had been working
+1,20,16,would have been working,would have been working,would have been working,would have been working,would have been working,would have been working
+1,21,1,seem,seem,seems,seem,seem,seem
+1,21,2,will seem,will seem,will seem,will seem,will seem,will seem
+1,21,3,seemed,seemed,seemed,seemed,seemed,seemed
+1,21,4,would seem,would seem,would seem,would seem,would seem,would seem
+1,21,5,am seeming,are seeming,is seeming,are seeming,are seeming,are seeming
+1,21,6,will be seeming,will be seeming,will be seeming,will be seeming,will be seeming,will be seeming
+1,21,7,was seeming,were seeming,was seeming,were seeming,were seeming,were seeming
+1,21,8,would be seeming ,would be seeming,would be seeming,would be seeming,would be seeming,would be seeming
+1,21,9,have seemed,have seemed,has seemed,have seemed,have seemed,have seemed
+1,21,10,will have seemed,will have seemed,will have seemed,will have seemed,will have seemed,will have seemed
+1,21,11,had seemed,had seemed,had seemed,had seemed,had seemed,had seemed
+1,21,12,would have seemed,would have seemed,would have seemed,would have seemed,would have seemed,would have seemed
+1,21,13,have been seeming,have been seeming,has been seeming,have been seeming,have been seeming,have been seeming
+1,21,14,will have been seeming,will have been seeming,will have been seeming,will have been seeming,will have been seeming,will have been seeming
+1,21,15,had been seeming,had been seeming,had been seeming,had been seeming,had been seeming,had been seeming
+1,21,16,would have been seeming,would have been seeming,would have been seeming,would have been seeming,would have been seeming,would have been seeming
+1,22,1,feel,feel,feels,feel,feel,feel
+1,22,2,will feel,will feel,will feel,will feel,will feel,will feel
+1,22,3,felt,felt,felt,felt,felt,felt
+1,22,4,would feel,would feel,would feel,would feel,would feel,would feel
+1,22,5,am feeling,are feeling,is feeling,are feeling,are feeling,are feeling
+1,22,6,will be feeling,will be feeling,will be feeling,will be feeling,will be feeling,will be feeling
+1,22,7,was feeling,were feeling,was feeling,were feeling,were feeling,were feeling
+1,22,8,would be feeling,would be feeling,would be feeling,would be feeling,would be feeling,would be feeling
+1,22,9,have felt,have felt,has felt,have felt,have felt,have felt
+1,22,10,will have felt,will have felt,will have felt,will have felt,will have felt,will have felt
+1,22,11,had felt,had felt,had felt,had felt,had felt,had felt
+1,22,12,would have felt,would have felt,would have felt,would have felt,would have felt,would have felt
+1,22,13,have been feeling,have been feeling,has been feeling,have been feeling,have been feeling,have been feeling
+1,22,14,will have been feeling,will have been feeling,will have been feeling,will have been feeling,will have been feeling,will have been feeling
+1,22,15,had been feeling,had been feeling,had been feeling,had been feeling,had been feeling,had been feeling
+1,22,16,would have been feeling,would have been feeling,would have been feeling,would have been feeling,would have been feeling,would have been feeling
+1,23,1,try,try,tries,try,try,try
+1,23,2,will try,will try,will try,will try,will try,will try
+1,23,3,tried,tried,tried,tried,tried,tried
+1,23,4,would try,would try,would try,would try,would try,would try
+1,23,5,am trying,are trying,is trying,are trying,are trying,are trying
+1,23,6,will be trying,will be trying,will be trying,will be trying,will be trying,will be trying
+1,23,7,was trying,were trying,was trying,were trying,were trying,were trying
+1,23,8,would be trying,would be trying,would be trying,would be trying,would be trying,would be trying
+1,23,9,have tried,have tried,has tried,have tried,have tried,have tried
+1,23,10,will have tried,will have tried,will have tried,will have tried,will have tried,will have tried
+1,23,11,had tried,had tried,had tried,had tried,had tried,had tried
+1,23,12,would have tried,would have tried,would have tried,would have tried,would have tried,would have tried
+1,23,13,have been trying,have been trying,has been trying,have been trying,have been trying,have been trying
+1,23,14,will have been trying,will have been trying,will have been trying,will have been trying,will have been trying,will have been trying
+1,23,15,had been trying,had been trying,had been trying,had been trying,had been trying,had been trying
+1,23,16,would have been trying,would have been trying,would have been trying,would have been trying,would have been trying,would have been trying
+1,24,1,leave,leave,leaves,leave,leave,leave
+1,24,2,will leave,will leave,will leave,will leave,will leave,will leave
+1,24,3,left,left,left,left,left,left
+1,24,4,would leave,would leave,would leave,would leave,would leave,would leave
+1,24,5,am leaving,are leaving,is leaving,are leaving,are leaving,are leaving
+1,24,6,will be leaving,will be leaving,will be leaving,will be leaving,will be leaving,will be leaving
+1,24,7,was leaving,were leaving,was leaving,were leaving,were leaving,were leaving
+1,24,8,would be leaving,would be leaving,would be leaving,would be leaving,would be leaving,would be leaving
+1,24,9,have left,have left,has left,have left,have left,have left
+1,24,10,will have left,will have left,will have left,will have left,will have left,will have left
+1,24,11,had left,had left,had left,had left,had left,had left
+1,24,12,would have left,would have left,would have left,would have left,would have left,would have left
+1,24,13,have been leaving,have been leaving,has been leaving,have been leaving,have been leaving,have been leaving
+1,24,14,will have been leaving,will have been leaving,will have been leaving,will have been leaving,will have been leaving,will have been leaving
+1,24,15,had been leaving,had been leaving,had been leaving,had been leaving,had been leaving,had been leaving
+1,24,16,would have been leaving,would have been leaving,would have been leaving,would have been leaving,would have been leaving,would have been leaving
+1,25,1,call,call,calls,call,call,call
+1,25,2,will call,will call,will call,will call,will call,will call
+1,25,3,called,called,called,called,called,called
+1,25,4,would call,would call,would call,would call,would call,would call
+1,25,5,am calling,are calling,is calling,are calling,are calling,are calling
+1,25,6,will be calling,will be calling,will be calling,will be calling,will be calling,will be calling
+1,25,7,was calling,were calling,was calling,were calling,were calling,were calling
+1,25,8,would be calling,would be calling,would be calling,would be calling,would be calling,would be calling
+1,25,9,have called,have called,has called,have called,have called,have called
+1,25,10,will have called,will have called,will have called,will have called,will have called,will have called
+1,25,11,had called,had called,had called,had called,had called,had called
+1,25,12,would have called,would have called,would have called,would have called,would have called,would have called
+1,25,13,have been calling,have been calling,has been calling,have been calling,have been calling,have been calling
+1,25,14,will have been calling,will have been calling,will have been calling,will have been calling,will have been calling,will have been calling
+1,25,15,had been calling,had been calling,had been calling,had been calling,had been calling,had been calling
+1,25,16,would have been calling,would have been calling,would have been calling,would have been calling,would have been calling,would have been calling
