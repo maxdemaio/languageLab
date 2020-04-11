@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <img src="/static/lab.png" class="rounded mx-auto d-block" height=250>
+    <h1 id="about">About</h1>
+
+    <p>
+        Language Lab is a website where you can practice the conjugations of the 25 most common verbs in a target language.
+        This allows for practical and efficient language learning, giving you a solid foundation to comprehend and converse.
+    </p>
+
+    <form id="lang-select" action="/" method="post">
+        <select class="form-control" form="lang-select" name="lang" onchange="activateSubmit()">
+            <!--Jinja loop of langs in db-->
+            <option value="" disabled selected>Language</option>
+            {% for lang in langs %}
+            <option>{{ lang[1] }}</option>
+            {% endfor %}
+        </select>
+        <button id="langSubmit" type="submit" class="btn btn-success btn-lg" disabled>Tenses</button>
+    </form>
+
+
+    <!--Write a script that constantly checks if the option is not "Language"-->
+    <script>
+        function activateSubmit() {
+            document.getElementById("langSubmit").disabled = false;
+        }
+    </script>
+
+{% endblock %}

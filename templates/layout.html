@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- https://https://favicon.io/emoji-favicons/test-tube/ -->
+        <link rel="icon" href="/static/lab_icon.png">
+
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <title>Language Lab: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="/"><span class="palette-0">Language Lab</span></a>
+             <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbar">
+                     <ul class="navbar-nav ml-auto mt-2">
+                         <li class="nav-item"><a class="nav-link" href="/">Contact Me</a></li>
+                         <li class="nav-item"><a class="nav-link" href="/">Log In</a></li>
+                         <li class="nav-item"><a class="nav-link" href="/">Register</a></li>
+                     </ul>
+            </div>
+        </nav>
+
+        <main class="main-container">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer class="small text-center text-muted">
+           Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.
+       </footer>
+
+    </body>
+<!--Make Footer here-->
+</html>
