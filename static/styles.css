@@ -1,0 +1,57 @@
+/* Documentation for color palette */
+/* https://colorhunt.co/palette/22272 */
+nav {
+    /* size for nav */
+    font-size: x-large;
+}
+
+nav .navbar-brand {
+    /* size for brand */
+    font-size: xx-large;
+}
+
+.palette-0 {
+    color: #f9f7f7;
+}
+
+body {
+    /* background color for body */
+    background-color: #f9f7f7;
+}
+
+main .form-control {
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main {
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* padding from nav bar */
+    padding: 10px;
+
+    /* content size formatting */
+    font-size: x-large;
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main img {
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+footer {
+    padding: 20px
+}
+
+#lang-select {
+    padding: 15px;
+    text-align: center;
+}
