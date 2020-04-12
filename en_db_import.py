@@ -74,7 +74,7 @@ with open('en_data/en_tenses.csv') as csvFile:
 
         db.execute("""INSERT INTO en_tense (lang_id, tense) VALUES(?, ?)""", (lang_id, en_tense))
 
-# Insert data into the en_tense table in our db
+# Insert data into the languages table in our db
 with open('languages.csv') as csvFile:
     reader = csv.DictReader(csvFile)
     for row in reader:
@@ -83,7 +83,8 @@ with open('languages.csv') as csvFile:
         db.execute("""INSERT INTO languages (lang) VALUES(?)""", (lang,))
 
 # Practice select
-db.execute("""SELECT * FROM en_conj WHERE tense_id IN (1, 2, 3)""")
+db.execute("""SELECT * FROM en_verb""")
+#db.execute("""SELECT * FROM en_conj WHERE tense_id IN (1, 2, 3)""")
 print(db.fetchall())
 
 
