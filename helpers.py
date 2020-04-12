@@ -18,3 +18,9 @@ def conjTable(lang_id):
         return "en_conj"
     else:
         pass
+
+def subPronouns(lang_id):
+    if lang_id == 1:
+        return ["I", "You", "He/She/It/One", "We", "You/You all", "They"]
+    else:
+        pass
