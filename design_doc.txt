@@ -24,3 +24,5 @@
 7. Quiz functionality (session specific)
     b)  Random subjects / verbs based on POST data from tenses
     c)  Verification of user input (session specific)
+
+8. Refactor and make sure there are no possible SQL injection possibilities
