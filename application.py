@@ -75,5 +75,21 @@ def conjugate(lang_id, lang, tenseIds):
     if request.method == "POST":
         return "TODO"
     else:
+        # Dynamically display conjs based on language chosen by user
+        langConjs = conjTable(int(lang_id))
+
+        # Split tenseIds string on commas into list to pass to db query
+        tenseIds = tenseIds.split(",")
+
+        # Format db execution w/ amount of ?s we will need so there will be no injections
+        params = ','.join(['?']*len(tenseIds))
+
         # We can then do a SQL query using the IN specifier to grab those tense rows
+        rows = query_db(f"""SELECT * FROM {langConjs} WHERE tense_id IN ({params})""", (tenseIds))
+        print(rows)
+
+        # TODO
+        # Return a pseudo random conjugation to practice
+
+
         return render_template("conjugate.html", lang=lang)
