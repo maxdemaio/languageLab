@@ -76,4 +76,4 @@ def conjugate(lang_id, lang, tenseIds):
         return "TODO"
     else:
         # We can then do a SQL query using the IN specifier to grab those tense rows
-        return "TODO"
+        return render_template("conjugate.html", lang=lang)
