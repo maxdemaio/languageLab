@@ -4,10 +4,9 @@ import sqlite3
 
 # Third party imports
 from flask import Flask, g, redirect, render_template, request, url_for
-from werkzeug.routing import BaseConverter
 
 # Local application imports
-from helpers import conjTable, tenseTable, verbTable
+from helpers import conjTable, subPronouns, tenseTable, verbTable
 
 app = Flask(__name__)
 
@@ -86,10 +85,29 @@ def conjugate(lang_id, lang, tenseIds):
 
         # We can then do a SQL query using the IN specifier to grab those tense rows
         rows = query_db(f"""SELECT * FROM {langConjs} WHERE tense_id IN ({params})""", (tenseIds))
-        print(rows)
+
+        # Note SQL starts id arrays at 1
+        randRow = rows[random.randint(0,len(rows)-1)]   # Random subset row from rows
+        randPos = random.randint(3, len(randRow[3:]))   # Pseudo random position for conj within subset row
+        randConj = randRow[randPos]                     # Random conj from subset row
+        verb_id = randRow[1]                            # Verb id from subset row
+        tense_id = randRow[2]                           # Tense id from subset row
+        sPronouns = subPronouns(int(lang_id))           # List of subject pronouns based on lang_id
+        sPronoun = sPronouns[randPos-3]                 # Subject pronoun for conjugation
+        print(randRow)
+        print(verb_id, tense_id, randConj)
+        print(sPronoun)
 
         # TODO
-        # Return a pseudo random conjugation to practice
+        # Query for verb
+        langVerbs = verbTable(int(lang_id))
+        verbs = query_db(f"""SELECT * FROM {langVerbs} WHERE id = (?)""", (verb_id,))
+        verb = verbs[0][2].title()
+        # TODO
+        # Query  tense
+        langTenses = tenseTable(int(lang_id))
+        tenses = query_db(f"""SELECT * FROM {langTenses} WHERE id = (?)""", (tense_id,))
+        tense = tenses[0][2]
 
-
-        return render_template("conjugate.html", lang=lang)
+        # Pass language, verb, subject pronoun, and tense
+        return render_template("conjugate.html", lang=lang, verb=verb, tense=tense, sPronoun=sPronoun)
