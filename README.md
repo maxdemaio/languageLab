@@ -6,23 +6,19 @@ Language Lab is a website where you can practice the conjugations of the 25 most
 ### Homepage
 Here is how the homepage looks. This is where one can select the target language they would like to practice
 from the dropdown menu. For now, I have only populated English, but more languages can be added in the future.
-<img src="/static/front_page.png" width = 500>
+<img src="/static/front_page.png" width = 600>
 
 ### Tenses
 From there, you can select which tenses you would like to practice for the 25 most common verbs.
-<img src="/static/tense_page.png" width = 500>
+<img src="/static/tense_page.png" width = 600>
 
-### Conjugation
+### Conjugation (Correct/Incorrect)
 Afterwards, you can jump right into practice. The web application will prompt you with a subject pronoun,
 verb, and tense to conjugate.
-<img src="/static/conj_page.png" width = 500>
 
-#### Correct Conjugation
 If you get the conjugation correct, the view will flash "Correct" and move on
-to the next conjugation.
-<img src="/static/conj_page_correct.png" width = 300>
-
-#### Incorrect Conjugation
-IF you get the conjugation incorrect, you will be given the correct response and be given the chance to
+to the next conjugation. If you get the conjugation incorrect, you will be given the correct response and be given the chance to
 retry the conjugation.
-<img src="/static/conj_page_incorrect.png" width = 300>
+<img src="/static/conj_page.png" width = 600>
+<img src="/static/conj_page_correct.png" width = 600>
+<img src="/static/conj_page_incorrect.png" width = 600>
