@@ -1,14 +1,16 @@
 # Standard library imports
+import os
 import random
 import sqlite3
 
 # Third party imports
-from flask import Flask, g, redirect, render_template, request, url_for
+from flask import Flask, flash, g, redirect, render_template, request, url_for
 
 # Local application imports
 from helpers import conjTable, subPronouns, tenseTable, verbTable
 
 app = Flask(__name__)
+app.secret_key = b'\xfb\xf63g\x81p\x99\xbe\x92T\x84\xaf\xa1\x0c\x85\x8a\x08\xd3\x9a\xb9\x99\x8d\x83'
 
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -72,7 +74,47 @@ def tense(lang_id, lang):
 @app.route("/<lang_id>/<lang>/Conjugate/<tenseIds>", methods = ["GET", "POST"])
 def conjugate(lang_id, lang, tenseIds):
     if request.method == "POST":
-        return "TODO"
+        # Obtain information about the random conjugation and user input
+        userConj = request.form["conjugation"]
+        verb_id = request.form["verb_id"]
+        tense_id = request.form["tense_id"]
+        sPronounPos = request.form["sPronounPos"]
+
+        # Query conjugation table for correct answer
+        langConjs = conjTable(int(lang_id))
+        row = query_db(f"""SELECT * FROM {langConjs} WHERE tense_id = (?) AND verb_id = (?)""", (tense_id, verb_id))
+        correctConj = row[0][int(sPronounPos)]
+
+        error = None
+        print(userConj)
+        print(correctConj)
+
+        if userConj.rstrip().lower() != correctConj:
+            error = "The correct conjugation is " + correctConj
+        else:
+            flash("Correct!")
+            return redirect(url_for("conjugate", lang=lang, lang_id=lang_id, tenseIds=tenseIds))
+
+        # basically another GET right here
+        # Repeat info so user can practice
+
+        # Get same subject pronoun again
+        sPronoun = subPronouns(int(lang_id))[int(sPronounPos) - 3]
+
+        # Query for same verb
+        langVerbs = verbTable(int(lang_id))
+        verbs = query_db(f"""SELECT * FROM {langVerbs} WHERE id = (?)""", (verb_id,))
+        verb = verbs[0][2].title()
+
+        # Query for same tense
+        langTenses = tenseTable(int(lang_id))
+        tenses = query_db(f"""SELECT * FROM {langTenses} WHERE id = (?)""", (tense_id,))
+        tense = tenses[0][2]
+
+        return render_template("conjugate.html", lang=lang, verb_id=verb_id,
+                sPronounPos=sPronounPos, tense_id=tense_id,
+                sPronoun=sPronoun, verb=verb, tense=tense, error=error)
+
     else:
         # Dynamically display conjs based on language chosen by user
         langConjs = conjTable(int(lang_id))
@@ -94,20 +136,17 @@ def conjugate(lang_id, lang, tenseIds):
         tense_id = randRow[2]                           # Tense id from subset row
         sPronouns = subPronouns(int(lang_id))           # List of subject pronouns based on lang_id
         sPronoun = sPronouns[randPos-3]                 # Subject pronoun for conjugation
-        print(randRow)
-        print(verb_id, tense_id, randConj)
-        print(sPronoun)
 
-        # TODO
         # Query for verb
         langVerbs = verbTable(int(lang_id))
         verbs = query_db(f"""SELECT * FROM {langVerbs} WHERE id = (?)""", (verb_id,))
         verb = verbs[0][2].title()
-        # TODO
+
         # Query  tense
         langTenses = tenseTable(int(lang_id))
         tenses = query_db(f"""SELECT * FROM {langTenses} WHERE id = (?)""", (tense_id,))
         tense = tenses[0][2]
 
         # Pass language, verb, subject pronoun, and tense
-        return render_template("conjugate.html", lang=lang, verb=verb, tense=tense, sPronoun=sPronoun)
+        return render_template("conjugate.html", lang=lang, verb=verb, tense=tense,
+                sPronoun=sPronoun, verb_id=verb_id, tense_id=tense_id, sPronounPos=randPos)
