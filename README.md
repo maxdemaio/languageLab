@@ -14,9 +14,6 @@ from the dropdown menu. For now, I have only populated English, but more languag
 ### Conjugation (Correct/Incorrect)
 Afterwards, you can jump right into practice. The web application will prompt you with a subject pronoun,
 verb, and tense to conjugate. If you get the conjugation correct, the view will flash "Correct" and move on to the next conjugation. If you get the conjugation incorrect, you will be given the correct response and be given the chance to retry the conjugation.
-
-| Conjugation views |
-:-------------------------:
-![](static/conj_page.png)
-![](static/conj_page_correct.png)
-![](static/conj_page_incorrect.png)  
+<img src="/static/conj_page.png" width=500>
+<img src="/static/conj_page_correct.png" width=500>
+<img src="/static/conj_page_incorrect.png" width=500>
