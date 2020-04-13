@@ -57,10 +57,11 @@ def index():
 def tense(lang_id, lang):
     if request.method == "POST":
         # Return a redirect to the conjugation route, passing a str of the list of tense_ids
-        # List of strings ex) ['1', '2'] when first two are checked
+        # List of strings ex) ['1', '2'] for English if Present/Future are chosen
         tenses = request.form.getlist("tense-checkbox")
 
         # Create a comma seperated string from the submitted tense_ids
+        # This will be passed to a hidden form to preserve data
         commaSeperated = ",".join(tenses)
 
         return redirect(url_for("conjugate", lang_id=lang_id, lang=lang, tenseIds=commaSeperated))
@@ -86,18 +87,14 @@ def conjugate(lang_id, lang, tenseIds):
         correctConj = row[0][int(sPronounPos)]
 
         error = None
-        print(userConj)
-        print(correctConj)
-
         if userConj.rstrip().lower() != correctConj:
             error = "The correct conjugation is: " +'"'+ correctConj +'"'
         else:
             flash("Correct!")
             return redirect(url_for("conjugate", lang=lang, lang_id=lang_id, tenseIds=tenseIds))
 
-        # basically another GET right here
+        # Basically another GET right here
         # Repeat info so user can practice
-
         # Get same subject pronoun again
         sPronoun = subPronouns(int(lang_id))[int(sPronounPos) - 3]
 
@@ -130,7 +127,7 @@ def conjugate(lang_id, lang, tenseIds):
 
         # Note SQL starts id arrays at 1
         randRow = rows[random.randint(0,len(rows)-1)]   # Random subset row from rows
-        randPos = random.randint(3, len(randRow))   # Pseudo random position for conj within subset row
+        randPos = random.randint(3, len(randRow)-1)       # Pseudo random position for conj within subset row
         randConj = randRow[randPos]                     # Random conj from subset row
         verb_id = randRow[1]                            # Verb id from subset row
         tense_id = randRow[2]                           # Tense id from subset row
