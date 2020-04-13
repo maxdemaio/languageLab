@@ -16,16 +16,6 @@
         <link rel="stylesheet" href="/static/styles.css">
 
         <title>Language Lab: {% block title %}{% endblock %}</title>
-        
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <ul class=flashes>
-                {% for message in messages %}
-                <li>{{ message }}</li>
-                {% endfor %}
-                </ul>
-            {% endif %}
-        {% endwith %}
 
     </head>
 
@@ -38,12 +28,20 @@
              </button>
              <div class="collapse navbar-collapse" id="navbar">
                      <ul class="navbar-nav ml-auto mt-2">
-                         <li class="nav-item"><a class="nav-link" href="/">Contact Me</a></li>
-                         <li class="nav-item"><a class="nav-link" href="/">Log In</a></li>
-                         <li class="nav-item"><a class="nav-link" href="/">Register</a></li>
                      </ul>
             </div>
         </nav>
+
+        <!-- Flash on correct response-->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-success" role="alert">
+                <strong>{{ message }}</strong>
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
 
         <main class="main-container">
             {% block main %}{% endblock %}
@@ -54,5 +52,5 @@
        </footer>
 
     </body>
-<!--Make Footer here-->
+
 </html>
