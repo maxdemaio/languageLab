@@ -90,7 +90,7 @@ def conjugate(lang_id, lang, tenseIds):
         print(correctConj)
 
         if userConj.rstrip().lower() != correctConj:
-            error = "The correct conjugation is " + correctConj
+            error = "The correct conjugation is: " +'"'+ correctConj +'"'
         else:
             flash("Correct!")
             return redirect(url_for("conjugate", lang=lang, lang_id=lang_id, tenseIds=tenseIds))
@@ -130,12 +130,14 @@ def conjugate(lang_id, lang, tenseIds):
 
         # Note SQL starts id arrays at 1
         randRow = rows[random.randint(0,len(rows)-1)]   # Random subset row from rows
-        randPos = random.randint(3, len(randRow[3:]))   # Pseudo random position for conj within subset row
+        randPos = random.randint(3, len(randRow))   # Pseudo random position for conj within subset row
         randConj = randRow[randPos]                     # Random conj from subset row
         verb_id = randRow[1]                            # Verb id from subset row
         tense_id = randRow[2]                           # Tense id from subset row
         sPronouns = subPronouns(int(lang_id))           # List of subject pronouns based on lang_id
         sPronoun = sPronouns[randPos-3]                 # Subject pronoun for conjugation
+        print(len(randRow[3:]))
+        print(sPronouns)
 
         # Query for verb
         langVerbs = verbTable(int(lang_id))
