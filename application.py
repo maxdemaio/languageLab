@@ -1,12 +1,6 @@
-# Standard library imports
-import os
-import random
-import sqlite3
-
-# Third party imports
+# Standard, third party, and local library imports
+import os, random, sqlite3
 from flask import Flask, flash, g, redirect, render_template, request, url_for
-
-# Local application imports
 from helpers import conjTable, subPronouns, tenseTable, verbTable
 
 app = Flask(__name__)
@@ -39,40 +33,46 @@ def query_db(query, args=(), one=False):
     cur.close()
     return (rv[0] if rv else None) if one else rv
 
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
         # Grab the user's choice of lang_id/language, redirect
-        lang_id = query_db("""SELECT id FROM languages WHERE lang = (?)""", (request.form["lang"],))[0][0]
         lang = request.form["lang"]
-
+        lang_id = query_db("""SELECT id FROM languages WHERE lang = (?)""", (lang,))[0][0]
         return redirect(url_for("tense", lang_id=lang_id, lang=lang))
+
     else:
         # Fetch languages from db
         langs = query_db("""SELECT * FROM languages""")
-
         return render_template("index.html", langs=langs)
 
-@app.route("/<lang_id>/<lang>", methods=["GET", "POST"])
+@app.route("/References")
+def references():
+    return render_template("references.html")
+
+@app.route("/Tense/<lang_id>/<lang>", methods=["GET", "POST"])
 def tense(lang_id, lang):
     if request.method == "POST":
         # Return a redirect to the conjugation route, passing a str of the list of tense_ids
         # List of strings ex) ['1', '2'] for English if Present/Future are chosen
         tenses = request.form.getlist("tense-checkbox")
-
+        
         # Create a comma seperated string from the submitted tense_ids
         # This will be passed to a hidden form to preserve data
         commaSeperated = ",".join(tenses)
 
         return redirect(url_for("conjugate", lang_id=lang_id, lang=lang, tenseIds=commaSeperated))
+
     else:
         # Dynamically display tenses based on language chosen by user
+        # Helper function returns the SQL table based on language id
         langTenses = tenseTable(int(lang_id))
         tenses = query_db(f"""SELECT * FROM {langTenses}""")
 
         return render_template("tense.html", lang_id=lang_id, lang=lang, tenses=tenses)
 
-@app.route("/<lang_id>/<lang>/Conjugate/<tenseIds>", methods = ["GET", "POST"])
+@app.route("/Conjugate/<lang_id>/<lang>/<tenseIds>", methods = ["GET", "POST"])
 def conjugate(lang_id, lang, tenseIds):
     if request.method == "POST":
         # Obtain information about the random conjugation and user input
@@ -141,7 +141,7 @@ def conjugate(lang_id, lang, tenseIds):
         verbs = query_db(f"""SELECT * FROM {langVerbs} WHERE id = (?)""", (verb_id,))
         verb = verbs[0][2].title()
 
-        # Query  tense
+        # Query tense
         langTenses = tenseTable(int(lang_id))
         tenses = query_db(f"""SELECT * FROM {langTenses} WHERE id = (?)""", (tense_id,))
         tense = tenses[0][2]

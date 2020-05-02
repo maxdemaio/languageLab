@@ -12,7 +12,7 @@
 
 <h2><small class="text-muted">(Please select the tenses you would like to practice)</small></h2>
 
-<form action="/1/English" method="post">
+<form action="{{ url_for('tense', lang_id=lang_id, lang=lang)}}" method="post">
     <div class="form-group">
     {% for tense in tenses %}
     <input type="checkbox" name="tense-checkbox" value="{{ tense[1] }}"> {{ tense[2] }}<br>
