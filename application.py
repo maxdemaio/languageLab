@@ -4,7 +4,6 @@ from flask import Flask, flash, g, redirect, render_template, request, url_for
 from helpers import conjTable, subPronouns, tenseTable, verbTable
 
 app = Flask(__name__)
-app.secret_key = b'\xfb\xf63g\x81p\x99\xbe\x92T\x84\xaf\xa1\x0c\x85\x8a\x08\xd3\x9a\xb9\x99\x8d\x83'
 
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -57,7 +56,7 @@ def tense(lang_id, lang):
         # Return a redirect to the conjugation route, passing a str of the list of tense_ids
         # List of strings ex) ['1', '2'] for English if Present/Future are chosen
         tenses = request.form.getlist("tense-checkbox")
-        
+
         # Create a comma seperated string from the submitted tense_ids
         # This will be passed to a hidden form to preserve data
         commaSeperated = ",".join(tenses)
