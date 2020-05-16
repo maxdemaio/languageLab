@@ -50,5 +50,7 @@ def main():
     english = Language(lang_id=1, tenseTable="en_tense", verbTable="en_verb", conjTable="en_conj",
             subPronouns = ["I", "You", "He/She/It/One", "We", "You/You all", "They"])
 
+    english.print_info()
+    
 if __name__ == "__main__":
     main()
