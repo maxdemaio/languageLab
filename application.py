@@ -1,7 +1,9 @@
 # Standard, third party, and local library imports
 import os, random, sqlite3
 from flask import Flask, flash, g, redirect, render_template, request, url_for
+
 from helpers import conjTable, subPronouns, tenseTable, verbTable
+import settings
 
 app = Flask(__name__)
 
@@ -10,6 +12,9 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Set global db path
 DATABASE = "lab.db"
+
+# Set secret key
+app.secret_key = os.getenv("SECRET_KEY")
 
 # Open db connection on demand
 def get_db():
