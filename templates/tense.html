@@ -15,7 +15,7 @@
 <form action="{{ url_for('tense', lang_id=lang_id, lang=lang)}}" method="post">
     <div class="form-group">
     {% for tense in tenses %}
-    <input type="checkbox" name="tense-checkbox" value="{{ tense[1] }}"> {{ tense[2] }}<br>
+    <input type="checkbox" name="tense-checkbox" value="{{ tense[0] }}"> {{ tense[1] }}<br>
     {% endfor %}
     <!--Try an on-click function in JS that will change the action string to the current URL-->
     </div>

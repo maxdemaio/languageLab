@@ -19,7 +19,7 @@
             <!--Jinja loop of langs in db-->
             <option value="" disabled selected>Language</option>
             {% for lang in langs %}
-            <option>{{ lang[1] }}</option>
+            <option>{{ lang[0] }}</option>
             {% endfor %}
         </select>
         <button id="langSubmit" type="submit" class="btn btn-success btn-lg" disabled>Tenses</button>
