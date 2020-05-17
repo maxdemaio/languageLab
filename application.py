@@ -75,8 +75,7 @@ def tense(lang_id):
         # This will be passed to a hidden form to preserve data
         tenseIds = ",".join(tenses)
 
-        # Think of how the user won't be able to manip the string in the URL
-        # Idea: store tenseIds from tense route to a user session
+        # Store tenseIds from tense route to a user session
         # Once in the conjugation route, if the tenseIds don't equal that, raise an error
         session["user_tenses"] = tenseIds
 
