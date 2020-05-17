@@ -4,7 +4,7 @@
 Language Lab is a website where you can practice the conjugations of the 25 most common verbs in a target language. This allows for practical and efficient language learning, giving you a solid foundation to comprehend and converse.
 
 ### Homepage/Tenses
-Here is how the homepage looks. This is where one can select the target language they would like to practice
+At the homepage one can select the target language they would like to practice
 from the dropdown menu. For now, I have only populated English, but more languages can be added in the future. With your chosen language you can select which tenses you would like to practice for the 25 most common verbs.
 
 ### Conjugation (Correct/Incorrect)
