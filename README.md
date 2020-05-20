@@ -1,5 +1,5 @@
 # Language Lab
-### 🧪 Flask web application to practice the conjugations of the 25 most common verbs in a target language.
+#### 🧪 Flask web application to practice the conjugations of the 25 most common verbs in a target language.
 
 ![](/static/languageLab.gif)
 
