@@ -26,3 +26,11 @@
     c)  Verification of user input (session specific)
 
 8. Refactor and make sure there are no possible SQL injection possibilities
+
+Refactoring:
+
+1. Remove sessions, no need for user sessions
+2. Figure out how to fix the flashing upon correct answers
+3. Create a schema (maybe in figma?) of the database rather than on paper
+4. Go back over code and see if any variable name changes/extra comments can be made
+5. Figure out plan for future languages (how db molds to them and implementation)
